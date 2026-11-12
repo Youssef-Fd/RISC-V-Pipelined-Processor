@@ -143,7 +143,7 @@ module datapath_single_cycle(
             2'b00: rd_data = alu_result;
             2'b01: rd_data = mem_read_data;
             2'b10: rd_data = pc_plus_4;
-            default: rd_data = alu_result; // should not happen
+            default: rd_data = alu_result;
         endcase
     end
 
